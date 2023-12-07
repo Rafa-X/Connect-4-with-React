@@ -1,0 +1,102 @@
+body{
+	background-color: rgb(30,30,30);
+	font-family: "Consolas"
+}
+
+.panel{
+	position: absolute;
+	background-color: rgb(30,25,50);
+	border: 5px solid rgb(90, 0, 135);
+	-webkit-box-shadow: 0 -2px 4px 4px rgba(0,0,0,0.7);
+	box-shadow: 0 -2px 4px 4px rgba(0,0,0,0.7);
+	z-index: 1;  /*specify is above of the rest of displayed components*/
+}
+
+.header{
+	left: 43%;
+	top: 5%;
+	height: 70px;
+	width: 400px;
+	margin-left: -120px;
+}
+
+.header-text{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	width: 350px;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.footer{
+	left: 18%;
+	top: 50%;
+	height: 80px;
+	width: 250px;
+	margin-left: -120px;
+	display: grid;
+	grid-template-rows: 1fr;
+}
+
+.footer button{
+	position: relative;
+	font-size: 25px;
+	font-weight: bold;
+	left: 55%;
+	top: 20%;
+	margin-left: -125px;
+	width: 220px;
+	height: 50px;
+	background-color: rgb(115, 90, 200);
+	border: 5px solid rgb(90, 0, 135);
+	-webkit-box-shadow: 0 -2px 4px 4px rgba(0,0,0,0.7);
+	box-shadow: 0 -2px 4px 4px rgba(0,0,0,0.7);
+}
+
+.footer button:hover{
+	background-color: rgb(255, 76, 76);
+}
+
+.gameBoard{
+	display: grid;  /*Grid -> organization of the elements in a grid*/
+	grid-template-columns: 1fr 1fr 1fr 1fr;  /*Especifies the amount of columns '1fr 1fr 1fr 1fr' means each one is 25% of the grid*/
+	grid-template-rows: 1fr 1fr 1fr;
+	padding: 20px;
+	width: 430px;
+	height: 430px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -250px;
+	background-color: rgb(30,25,50);
+	border: 5px solid rgb(90, 0, 135);
+	border-radius: 8%;
+	-webkit-box-shadow: 0 0 6px 7px rgba(0,0,0,0.7);
+	box-shadow: 0 0 6px 7px rgba(0,0,0,0.7);
+}
+
+.gameCircle{
+	width: 80px; 
+	height: 80px; 
+	margin: 10px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.player_0{
+	background-color: rgb(235, 235, 235);
+}
+
+.player_1{
+	background-color: rgb(211, 28, 28);
+}
+
+.player_2{
+	background-color: rgb(25, 25, 173);
+}
